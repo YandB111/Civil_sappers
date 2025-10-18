@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
+import logoImg from "../../assets/logo/LogoSappers.jpeg"; 
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -9,7 +10,7 @@ const Navbar = () => {
     <nav className="navbar">
       {/* Left Side Logo */}
       <div className="navbar-left" onClick={() => navigate("/")}>
-        <div className="logo">UC</div>
+       <img src={logoImg} alt="Civil Sappers Logo" className="logo-img" /> 
         <span className="company-name">Civil Sappers</span>
       </div>
 
@@ -36,7 +37,9 @@ const Navbar = () => {
         />
         <div className="icon">📝</div>
         <div className="cart">🛒</div>
-        <div className="icon">👤</div>
+      <div className="icon" onClick={() => navigate("/Login")}>
+          👤
+        </div>
       </div>
     </nav>
   );

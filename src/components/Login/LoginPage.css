@@ -1,0 +1,115 @@
+/* 🎨 Overall container styling */
+.login-container {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 35px;
+  background: linear-gradient(145deg, #ffffff, #f3f6ff);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.login-container:hover {
+  transform: translateY(-3px);
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* 🧍 Role selection buttons */
+.role-select {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.role-select label {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 6px;
+}
+
+/* 📱 Input fields */
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  border-color: #007bff;
+}
+
+/* 📸 Upload section */
+.upload-label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.preview {
+  display: block;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 10px;
+  border: 2px solid #007bff;
+}
+
+/* 📍 Location section */
+.location-section {
+  margin-top: 20px;
+}
+
+.location-text {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #2d862d;
+  background-color: #ecffee;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+/* 🚀 Buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.btn:disabled {
+  background-color: #a1a1a1;
+  cursor: not-allowed;
+}

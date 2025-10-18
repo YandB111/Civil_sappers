@@ -8,6 +8,15 @@ border-bottom: 1px solid #ddd;
 font-family: Arial, sans-serif;
 }
 
+.logo-img {
+  height: 45px;        
+  width: auto;
+  border-radius: 8px;   
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
 .navbar-left {
 display: flex;
 align-items: center;
